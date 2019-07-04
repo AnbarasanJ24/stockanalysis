@@ -1,5 +1,8 @@
+
 import { Component, OnInit } from '@angular/core';
 import { AnalysisService } from '../analysis.service';
+
+
 
 @Component({
   selector: 'app-analysis',
@@ -8,8 +11,9 @@ import { AnalysisService } from '../analysis.service';
 })
 export class AnalysisComponent implements OnInit {
   
+
   constructor(public service : AnalysisService) {
-  
+    
   }
 
   ngOnInit() {

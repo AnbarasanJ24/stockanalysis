@@ -1,10 +1,16 @@
+import { CompanyDetail } from './analysis/company-details';
+import { Company } from './analysis/company';
+
 import { Injectable } from '@angular/core';
+
 
 @Injectable()
 export class AnalysisService {
-  messaage = 'Hello';
-  getDetails(){
-     alert('Function was called from service');
+  search :Company[] = CompanyDetail;
+  searchInput : Company[];
+
+  getDetails() { 
+     
   }
 
   constructor() { }
