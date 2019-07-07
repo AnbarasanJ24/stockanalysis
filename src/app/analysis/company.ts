@@ -1,4 +1,4 @@
 export class Company{
     companyName : string;
-    values : Array<Object>;    
+    values : Array <Object>;    
 }

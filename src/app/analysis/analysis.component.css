@@ -1,11 +1,4 @@
-.container{
-    margin-left: 2px;
-    margin-top: 15px;
-}
-.Search{
-    height: 37px;
-    width: 300px;
-}
-.btn{
-    margin-left: 5px;
+#companyName{
+    width : 400px;
+    height: 45px;
 }

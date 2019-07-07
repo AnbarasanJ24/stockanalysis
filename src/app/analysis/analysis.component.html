@@ -1,4 +1,22 @@
-<input type="text" name="" value ="" placeHolder="Please enter the company Name" #companyName>
-<button type= "button" value= "button" (click)="this.getStockDetails(companyName.value)"> Save</button>
+
+<input type="text" name="" value ="" placeHolder="Please enter the company Name" #companyName id="companyName">
+
+<button type= "button" value= "button" 
+class="btn btn-outline-primary btn-lr"
+(click)="this.getStockDetails(companyName.value)"> 
+<span class="fa fa-search"></span>
+</button>
+
+<div class="currentCompany">
+<table >
+    <tr *ngIf="this.currentCompanyDetails !== undefined">
+        <td>{{ this.currentCompanyDetails.companyName}}</td>
+        <td *ngFor ="let value of this.currentCompanyDetails.values"> {{value }} </td>
+    </tr>
+</table>
+</div>
+
+
+
 
 
