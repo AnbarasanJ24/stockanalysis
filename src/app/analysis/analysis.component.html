@@ -1,10 +1,4 @@
-<div class="container">
-  <span>
-    <input [(ngModel)] ="service.searchInput"/>
-  </span> 
-  <span><button 
-    class="btn btn-primary"
-    (click)="service.getDetails()"
-     >Search
-  </button></span>
-</div>
+<input type="text" name="" value ="" placeHolder="Please enter the company Name" #companyName>
+<button type= "button" value= "button" (click)="this.getStockDetails(companyName.value)"> Save</button>
+
+

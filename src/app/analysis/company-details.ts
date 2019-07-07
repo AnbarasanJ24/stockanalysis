@@ -1,9 +1,9 @@
 
 import { Company } from './company';
 
-export const CompanyDetail : Company[]= [
-    {companyName : 'google', companyStockValue : 100000},
-    {companyName : 'Amazon', companyStockValue : 200000},
-    {companyName : 'FaceBook', companyStockValue : 200000}
+export const CompanyStockDetail : Company[]= [
+    {companyName : 'Google', value: [1000,1524,4521,452]},
+    {companyName : 'Amazon', value: [1100,1824,8521,412]},
+    {companyName : 'FaceBook', value: [4000,8524,8521,4542]}
 ];
        

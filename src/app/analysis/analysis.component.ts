@@ -1,7 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { AnalysisService } from '../analysis.service';
-
+import { Company } from '../analysis/AnalysisComponent';
 
 
 @Component({
@@ -11,12 +11,14 @@ import { AnalysisService } from '../analysis.service';
 })
 export class AnalysisComponent implements OnInit {
   
+  private currentCompanyDetails : Company;
 
-  constructor(public service : AnalysisService) {
-    
+  getStockDetails(companyName : string): void{
+    this.currentCompanyDetails = this.Companyservice.getStockDetails(companyName);
   }
+ 
+  constructor(private Companyservice : AnalysisService) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }
