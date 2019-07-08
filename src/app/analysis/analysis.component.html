@@ -3,19 +3,18 @@
 
 <button type= "button" value= "button" 
 class="btn btn-outline-primary btn-lr"
-(click)="this.getStockDetails(companyName.value)"> 
+(click)="this.getStockDetails(companyName.value)" #History> 
 <span class="fa fa-search"></span>
 </button>
 
 <div class="currentCompany">
 <table >
     <tr *ngIf="this.currentCompanyDetails !== undefined">
-        <td>{{ this.currentCompanyDetails.companyName}}</td>
+        <td>{{ this.currentCompanyDetails.companyName }}</td>
         <td *ngFor ="let value of this.currentCompanyDetails.values"> {{value }} </td>
     </tr>
 </table>
 </div>
-
 
 
 

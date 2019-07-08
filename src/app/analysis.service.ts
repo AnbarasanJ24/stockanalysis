@@ -6,6 +6,9 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class AnalysisService {
   private stockData :Company[] = CompanyStockDetail;
+  private HistoryData: object;
+
+  constructor() { }
 
   getStockDetails(companyName : string): Company { 
     
@@ -15,7 +18,5 @@ export class AnalysisService {
     }
 
   }
-
-  constructor() { }
-
+  
 }
