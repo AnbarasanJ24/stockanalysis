@@ -12,7 +12,7 @@ import { AnalysisService } from '../analysis.service';
 export class AnalysisComponent implements OnInit {
   
   private currentCompanyDetails : Company;
-  private historyData : Company;
+  private pastSearchData : Company[] = [];
  
 
   constructor(private Companyservice : AnalysisService) { }
@@ -20,7 +20,7 @@ export class AnalysisComponent implements OnInit {
 
   getStockDetails(companyName : string): void{
     this.currentCompanyDetails = this.Companyservice.getStockDetails(companyName);
-    
+    this.pastSearchData.push(this.currentCompanyDetails);
   }
   
 

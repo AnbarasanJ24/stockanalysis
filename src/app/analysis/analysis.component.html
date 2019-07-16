@@ -16,6 +16,17 @@ class="btn btn-outline-primary btn-lr"
 </table>
 </div>
 
+<div class="pastSearch">
+    Past Search Details
+    <table >
+        <tr *ngFor="let pastSearch of this.pastSearchData">
+            <td>{{ pastSearch.companyName }}</td>
+            <td *ngFor="let value of pastSearch.values">{{ value }}</td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
 
 
 
