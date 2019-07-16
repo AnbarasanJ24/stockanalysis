@@ -1,4 +1,4 @@
-import { CompanyStockDetail } from './company-details';
+
 import { Company } from './company';
 import { Component, OnInit } from '@angular/core';
 import { AnalysisService } from '../analysis.service';
